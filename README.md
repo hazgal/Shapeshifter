@@ -14,11 +14,7 @@ cd Shapeshifter/
 ```bash
 chmod +x Shapeshifter.sh
 ```
-```
-
 ### Usage
 ```bash
 sudo ./Shapeshifter.sh
 ```
-
-
