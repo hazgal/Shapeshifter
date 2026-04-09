@@ -1,4 +1,21 @@
-<img width="851" height="649" alt="image" src="https://github.com/user-attachments/assets/74dd60ce-618b-4cec-805a-ab0ff2589aef" />
+    ░█▀▀░█░█░█▀█░█▀█░█▀▀░█▀▀░█░█░▀█▀░█▀▀░▀█▀░█▀▀░█▀▄
+    ░▀▀█░█▀█░█▀█░█▀▀░█▀▀░▀▀█░█▀█░░█░░█▀▀░░█░░█▀▀░█▀▄
+    ░▀▀▀░▀░▀░▀░▀░▀░░░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░░░░▀░░▀▀▀░▀░▀
+
+A Bash script that auto detects your wireless interface, applies spoofing and waits for a keypress before restoring your original MAC and hostname.
+
+### Installation
+```bash
+git clone https://github.com/hazgal/Shapeshifter
+```
+```bash
+cd Shapeshifter/
+```
+```
+
+### Usage
+```bash
+sudo ./Shapeshifter.sh
+```
 
 
-Bash script that disconnect from wifi, changes mac address and hostname then reconnects. Restores previous mac and hostname when quitting.
