@@ -1,4 +1,3 @@
-```
 <div align="center">
 ░█▀▀░█░█░█▀█░█▀█░█▀▀░█▀▀░█░█░▀█▀░█▀▀░▀█▀░█▀▀░█▀▄
 ░▀▀█░█▀█░█▀█░█▀▀░█▀▀░▀▀█░█▀█░░█░░█▀▀░░█░░█▀▀░█▀▄
@@ -6,7 +5,7 @@
 
 A Bash script that auto detects your wireless interface, applies spoofing and waits for a keypress before restoring your original MAC and hostname.
 </div>
-```
+
 ### Installation
 ```bash
 git clone https://github.com/hazgal/Shapeshifter
