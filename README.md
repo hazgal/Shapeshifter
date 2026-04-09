@@ -2,9 +2,6 @@
 ░▀▀█░█▀█░█▀█░█▀▀░█▀▀░▀▀█░█▀█░░█░░█▀▀░░█░░█▀▀░█▀▄
 ░▀▀▀░▀░▀░▀░▀░▀░░░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░░░░▀░░▀▀▀░▀░▀
 
-![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)
-
-
 A Bash script that auto detects your wireless interface, applies spoofing and waits for a keypress before restoring your original MAC and hostname.
 
 ### Installation
@@ -21,7 +18,7 @@ chmod +x Shapeshifter.sh
 ```bash
 sudo ./Shapeshifter.sh
 ```
-## License
+## License ![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)
 
 This program is **free software**: you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the **Free Software Foundation**, either version 3 of the License, or any later version.
 
