@@ -1,10 +1,11 @@
 <div align="center">
 <img width="687" height="93" alt="image" src="https://github.com/user-attachments/assets/f0cb0d00-aaea-4744-9628-17b900327e86" />
 
-
-A Bash script that auto detects your wireless interface, applies spoofing and waits for a keypress before restoring your original MAC and hostname.
+Bash script that disconnect from wifi, changes mac address and hostname then reconnects. Restores previous mac and hostname when quitting.
 </div>
 
+### Dependencies
+[GNU MAC Changer](https://github.com/alobbs/macchanger)
 ### Installation
 ```bash
 git clone https://github.com/hazgal/Shapeshifter
