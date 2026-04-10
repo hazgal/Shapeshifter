@@ -1,7 +1,5 @@
 <div align="center">
-░█▀▀░█░█░█▀█░█▀█░█▀▀░█▀▀░█░█░▀█▀░█▀▀░▀█▀░█▀▀░█▀▄
-░▀▀█░█▀█░█▀█░█▀▀░█▀▀░▀▀█░█▀█░░█░░█▀▀░░█░░█▀▀░█▀▄
-░▀▀▀░▀░▀░▀░▀░▀░░░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░░░░▀░░▀▀▀░▀░▀
+<img width="679" height="81" alt="image" src="https://github.com/user-attachments/assets/d32c18ae-a3d9-4b18-af05-fc5a18df77da" />
 
 A Bash script that auto detects your wireless interface, applies spoofing and waits for a keypress before restoring your original MAC and hostname.
 </div>
