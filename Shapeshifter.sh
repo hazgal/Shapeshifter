@@ -13,15 +13,20 @@ echo ""
 
 set -euo pipefail
 
+# Colors
+RED='\033[1;31m'
+GREEN='\033[1;32m'
+RESET='\033[0m'
+
 # Root check
 if [ "$EUID" -ne 0 ]; then
-  echo "Run as root" >&2
+  echo -e "${RED}Shapeshifter must be run as root${RESET}" >&2
   exit 1
 fi
 
 # Check if macchanger is installed
 if ! command -v macchanger &>/dev/null; then
-  echo "macchanger not installed. Install with: sudo apt install macchanger" >&2
+  echo -e "${RED}macchanger not installed${RESET}" >&2
   exit 1
 fi
 
@@ -29,7 +34,7 @@ fi
 IFACE=$(for i in /sys/class/net/*; do [ -d "$i/wireless" ] && echo "${i##*/}" && break; done)
 
 if [ -z "$IFACE" ]; then
-  echo "No wireless interface found" >&2
+  echo "${RED}No wireless interface found${RESET}" >&2
   exit 1
 fi
 
@@ -74,7 +79,7 @@ cleanup() {
   sleep 2
   dhclient "$IFACE" 2>/dev/null || true
 
-  echo "✓ Restored!"
+  echo -e "${GREEN}✓ Restored!${RESET}"
   echo "Hostname: $OLD_HOSTNAME"
   echo ""
 }
@@ -111,7 +116,7 @@ sleep 2
 dhclient "$IFACE" 2>/dev/null || true
 
 echo ""
-echo "✓ Done!"
+echo -e "${GREEN}✓ Done!${RESET}"
 macchanger -s "$IFACE"
 echo "New hostname: $NEW_HOSTNAME"
 echo ""
